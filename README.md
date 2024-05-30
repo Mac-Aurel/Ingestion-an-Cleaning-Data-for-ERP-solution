@@ -1,20 +1,27 @@
-# Ingestion-and-Cleaning-Data-for-ERP-solution
+Ingestion et Nettoyage de Données pour Solution ERP
+Description
 
-(Big Data Analytics - Data Integration)
+Ce projet fournit une solution d'ingestion et de nettoyage de données pour une solution ERP, visant à garantir la qualité et la fiabilité des données utilisées dans le système. Il comprend les fonctionnalités suivantes :
+Fonctionnalités
 
-Functions:
-- Parsed XML files into cElementTree Data Type
-- Automatic DB relations' attributes name and type identification
-- Crash Management System (Rollback and Checkpoint - avoid missing data)
-- Clean and Ingest parsed data to PostgreSQL DB
+    Conversion des fichiers XML en type de données cElementTree.
+    Identification automatique des attributs et des types de données des relations de base de données.
+    Système de gestion des pannes pour éviter la perte de données (Rollback et Checkpoint).
+    Nettoyage et ingestion des données analysées dans une base de données PostgreSQL.
 
-EXECUTING THE SCRIPT:
-- update data.txt
-- create a folder 'data' or use any other name (change the path in python script) 
-- place XML files into folder 'data' or any specified path in the previous step
-- RUN main.py
+Instructions d'exécution
 
-HOW TO CREATE OTHER RELATIONS
-- update relations name in the script
-- update primary key and its value in the script
-- the rest should be automatically created based on the XML input files
+    Préparation des données :
+        Mettre à jour le fichier data.txt avec les informations nécessaires.
+        Créer un dossier data (ou utiliser un autre nom) et placer les fichiers XML à ingérer dans ce dossier.
+
+    Exécution du script :
+        Exécuter le script main.py pour lancer le processus d'ingestion et de nettoyage des données.
+
+    Création de nouvelles relations :
+        Mettre à jour les noms des relations et les clés primaires dans le script selon les besoins.
+        Les autres attributs et relations seront automatiquement créés en fonction des fichiers XML d'entrée.
+
+Avertissement
+
+Assurez-vous de suivre les instructions avec précaution pour éviter toute perte de données ou erreurs lors de l'exécution du script.
